@@ -1,3 +1,18 @@
+# Débora digitou uma string aleatória no campo de senha, porém
+# ela não tem certeza se é uma senha forte. Para ajudar Débora,
+# construa um algoritmo que informe qual é o número mínimo de caracteres
+# que devem ser adicionados para uma string qualquer ser considerada segura.
+# Exemplo:
+# Entrada:
+# Ya3
+# Saída:
+# 3
+# Explicação:
+# Ela pode tornar a senha segura adicionando 3 caracteres, por exemplo, &ab,
+# transformando a senha em Ya3&ab. 2 caracteres não são suficientes visto que
+# a senha precisa ter um tamanho mínimo de 6 caracteres.
+
+
 def validate_password(password: str) -> int:
     """
     It has at least 6 characters.
@@ -33,5 +48,3 @@ def validate_password(password: str) -> int:
         return diff_size
     else:
         return count
-
-

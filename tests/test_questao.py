@@ -2,6 +2,7 @@ import pytest
 
 from questao_01 import stair_step, create_stair
 from questao_02 import validate_password
+from questao_03 import anagram
 
 
 def test_stair_step():
@@ -41,3 +42,8 @@ def test_validate_password():
     assert validate_password('aaaaaaa') == 3
     assert validate_password('aBaaaaa') == 2
     assert validate_password('aB') == 4
+
+
+def test_anagram():
+    assert anagram("ovo") == 2
+    assert anagram("ifailuhkqq") == 3
