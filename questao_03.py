@@ -15,7 +15,12 @@
 from itertools import groupby
 
 
-def anagram(text):
+def anagram(text: str) -> int:
+    """
+    Returns anagram pairs
+    :param text:
+    :return: anagram pairs
+    """
     count = 0
     data = []
     for index in range(0, len(text)):
