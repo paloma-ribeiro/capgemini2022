@@ -1,6 +1,7 @@
 import pytest
 
 from questao_01 import stair_step, create_stair
+from questao_02 import validate_password
 
 
 def test_stair_step():
@@ -31,3 +32,12 @@ def test_create_stair():
     expected_result = '  *\n **\n***\n'
     result = create_stair(n=3)
     assert expected_result == result
+
+
+def test_validate_password():
+    assert validate_password('Ya3') == 3
+    assert validate_password('Ya3@') == 2
+    assert validate_password('Ya3B') == 2
+    assert validate_password('aaaaaaa') == 3
+    assert validate_password('aBaaaaa') == 2
+    assert validate_password('aB') == 4
