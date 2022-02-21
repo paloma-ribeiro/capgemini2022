@@ -19,7 +19,7 @@ def anagram(text: str) -> int:
     """
     Returns anagram pairs
     :param text:
-    :return: anagram pairs
+    :return: int
     """
     count = 0
     data = []
